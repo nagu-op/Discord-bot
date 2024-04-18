@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import csv
 from PIL import Image, ImageDraw, ImageFont
+import datetime
 
 intents = discord.Intents.all()
 
@@ -44,6 +45,9 @@ async def scoreboard(ctx):
     image.save(output_image_path)
     
     await ctx.send(file=discord.File(output_image_path))
+
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    await ctx.send(f"Last update was: {current_time}")
 
 # Replace 'YOUR_DISCORD_BOT_TOKEN' with your actual bot token
 bot.run('MTIzMDQ0Njc2ODQ3OTY3MDI3Mg.GKgm9h.oNcFXBJ3Kuuf6DpmHFT1Hs4QtvBtQ1cCZr2rp8')
