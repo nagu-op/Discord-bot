@@ -21,7 +21,7 @@ async def scoreboard(ctx):
     csv_file = 'test.csv'
     coordinates_file = 'coordinates.csv'
     image_path = 'sample.jpg'
-    font_path = 'Aaargh.ttf'
+    font_path = 'nameFont.ttf'
     font_size = 36
     
     image = Image.open(image_path)
