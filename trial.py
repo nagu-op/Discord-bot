@@ -50,4 +50,4 @@ async def scoreboard(ctx):
     await ctx.send(f"Last update was: {current_time}")
 
 # Replace 'YOUR_DISCORD_BOT_TOKEN' with your actual bot token
-bot.run('MTIzMDQ0Njc2ODQ3OTY3MDI3Mg.GKgm9h.oNcFXBJ3Kuuf6DpmHFT1Hs4QtvBtQ1cCZr2rp8')
+bot.run('')
